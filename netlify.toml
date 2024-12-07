@@ -1,0 +1,8 @@
+[build]
+  publish = "public"        # Directorio donde están los archivos estáticos
+  functions = "functions"   # Directorio donde están las funciones serverless
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
